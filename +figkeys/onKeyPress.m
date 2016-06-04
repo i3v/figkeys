@@ -30,7 +30,7 @@ function  onKeyPress( hfig, evnt )
 %         the Command Window, unless this function is called via
 %         'KeyPressFcn', which is an issue, cause it gets overwritten
 %         on MODE change.
-%         (see notes in "setHotkeys.m" and "setOverwritable.m")
+%         (see notes in "setHotkeys.m" and "updateCallbacks.m")
 %
 %     Character: 'z'
 %      Modifier: {''}
@@ -65,7 +65,7 @@ switch evnt.Key
         
 end
 
-figkeys.setOverwritable( hfig, mode );
+figkeys.updateCallbacks( hfig, mode );
 
 
 end

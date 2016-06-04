@@ -1,4 +1,4 @@
-function  setOverwritable( hfig, mode )
+function  updateCallbacks( hfig, mode )
 % Callback-based key-capturing method. Implemented as a standalone
 % function, separately from "setHotkeys.m" to simplify the process of
 % switching back to "v2", if needed:

@@ -28,11 +28,11 @@ function  setHotkeys( hfig )
 if ~exist('hfig','var'); hfig =gcf;end;
 
 %% v1 
-figkeys.setOverwritable(hfig);
+figkeys.updateCallbacks(hfig);
 figkeys.wrapToolbarButtonCallbacks(hfig);
 
 %% v2 (currently disabled)
-% (1) Same as for v1 (see "setOverwritable.m")
+% (1) Same as for v1 (see "updateCallbacks.m")
 %
 % (2) If MODE is not toggeled, keypresses are still printed.
 %     Try commening out "zoom(hobj,new_state) and "pan(hobj,new_state)".
